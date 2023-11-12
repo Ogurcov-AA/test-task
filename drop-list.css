@@ -184,7 +184,7 @@ input[type='radio']:checked + label:hover {
     height: 16px;
     width: 16px;
     content: '';
-    background: url("Close.svg");
+    background: url("Asset/Close.svg");
 }
 
 .button-menu.active {
@@ -285,7 +285,7 @@ input[type='radio']:checked + label:hover {
 .drop-list--content > input:checked + label > span:after {
     content: "";
     display: inline-block;
-    background: url("Tick.svg") no-repeat;
+    background: url("Asset/Tick.svg") no-repeat;
     background-position: center;
     height: 100%;
     width: 100%;
