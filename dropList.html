@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="drop-list.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@500&display=swap"
+          rel="stylesheet">
+
+</head>
+<body>
+<form class="container">
+    <input type="checkbox" name="" id="drop-list" class="btn">
+    <label class="drop-list" data-set="" for="drop-list">
+        <svg class="drop-list__img" width="16" height="16" viewBox="0 0 16 16" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 13C10.5376 13 13 10.5376 13 7.5C13 4.46243 10.5376 2 7.5 2C4.46243 2 2 4.46243 2 7.5C2 10.5376 4.46243 13 7.5 13Z"
+                  stroke="#080908" stroke-width="2" stroke-linecap="square"/>
+            <path d="M12 12L14 14" stroke="#080908" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>жк, округ, район, метро</span>
+
+    </label>
+    <div class="drop-down-menu">
+        <div class="tab-menu">
+            <div class="tab-menu__item">
+                <input class="radio" type="radio" id="radioButton1" name="radioChoose" value="ЖК" checked/>
+                <label class="radio-btn" for="radioButton1">ЖК</label>
+            </div>
+            <div class="tab-menu__item">
+                <input class="radio" type="radio" id="radioButton2" name="radioChoose" value="округ"/>
+                <label class="radio-btn" for="radioButton2">округ</label>
+            </div>
+            <div class="tab-menu__item">
+                <input class="radio" type="radio" id="radioButton3" name="radioChoose" value="район"/>
+                <label class="radio-btn" for="radioButton3">район</label>
+            </div>
+            <div class="tab-menu__item">
+                <input class="radio" type="radio" id="contactChoice4" name="radioChoose" value="метро"/>
+                <label class="radio-btn" for="contactChoice4">метро</label>
+            </div>
+        </div>
+        <div class="button-menu">
+
+        </div>
+        <div id="root-drop-list"></div>
+        <div class="drop-down-menu--shadow"></div>
+    </div>
+</form>
+</body>
+<script src="drop-list.js"></script>
+</html>
