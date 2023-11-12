@@ -44,6 +44,7 @@
    function checkScroll(){
     let rootElement = document.getElementById('root-drop-list')
        if(rootElement.scrollHeight > rootElement.clientHeight) {
+           document.querySelector('.drop-down-menu--shadow').style.display = 'block'
            rootElement.onscroll = () => {
                if(rootElement.scrollHeight - rootElement.scrollTop < rootElement.clientHeight) {
                    document.querySelector('.drop-down-menu--shadow').style.display = 'none'
@@ -51,6 +52,7 @@
                else document.querySelector('.drop-down-menu--shadow').style.display = 'block'
            }
        }
+       else document.querySelector('.drop-down-menu--shadow').style.display = 'none'
     }
 
     function isChecked(node) {

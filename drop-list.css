@@ -200,7 +200,7 @@ input[type='radio']:checked + label:hover {
   position: absolute;
   bottom: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
-  background-size: 50px 100%, 100% 10px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: local, scroll;
 }
