@@ -32,7 +32,7 @@
             return Object.values(state.district).reduce((acc, item) => acc + item.length, 0)
         },
         getDisctrictName(dist) {
-            return state.district[dist]
+            return state.district[dist.value]
         }
     }
 
